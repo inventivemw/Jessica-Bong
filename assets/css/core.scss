@@ -1,0 +1,257 @@
+/*
+    
+    Jessica Bong - 2014
+    ----------------------------------------------------------------------------
+    
+    Style Index
+
+    $1 - Typography & Colour
+    $2 - Header and Navigation
+    $3 - Structure
+
+    $M - Miscellaneous
+    $0 - Media Queries
+
+*/
+
+@import url("bootstrap.min.css");
+
+@import url("bootstrap-responsive.min.css");
+
+@import "bourbon/bourbon";
+
+/*------------------------------------------------------------------------------
+ $1 - Typography & Colour
+------------------------------------------------------------------------------*/
+
+$background: #ececec;
+
+$colour-grey: tint(black, 15%);
+$colour-mgrey: tint($colour-grey, 90%);
+$colour-lgrey: tint($colour-grey, 60%);
+$colour-blue: #0600ff;
+$colour-aqua: #45c1b9;
+$colour-yellow: #eee54e;
+
+$font-size: modular-scale(10px, 1, 1.618);
+$font-display: serif;
+$font-body: serif;
+$paragraph-leading: 1.5em;
+$display-leading: 1.25em;
+
+$resolution: 720px;
+
+$break-tiny: 420px;
+$break-small: 550px;
+$break-medium: 768px;
+$break-large: 905px;
+
+body {
+    background: $background;
+    color: $colour-grey;
+    font: {
+        family: $font-body;
+        size: $font-size;
+        weight: 300;
+    }
+}
+
+p {
+    color: $colour-grey;
+    line-height: $paragraph-leading;
+    margin-bottom: $paragraph-leading / 2;
+    a {
+        border-bottom: 1px solid $colour-blue;
+        color: $colour-grey;
+        padding-bottom: 2px;
+        &:hover {
+            color: $colour-blue;
+            text-decoration: none;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    color: $colour-blue;
+    font: {
+        family: $font-display;
+    };
+    line-height: $display-leading;
+    margin: 0;
+    padding: 0.25em 0;
+}
+
+h2 {
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/*------------------------------------------------------------------------------
+ $2 - Header and Navigation
+------------------------------------------------------------------------------*/
+
+header {
+    background: $background;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.menu {
+    margin-top: 20px;
+    padding: 0;
+    > li {
+        font-size: 1.3em;
+        a {
+            color: $colour-blue;
+            padding: 0.5em 1em;
+        }
+
+        display: inline-block;
+    }
+}
+
+.logo {
+    float: left;
+    max-width: 60px;
+}
+
+/*------------------------------------------------------------------------------
+ $3 - Structure
+------------------------------------------------------------------------------*/
+
+#main {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 100px 0 20px;
+    padding: 20px;
+
+    .thumbnail {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        background: none;
+        border: none;
+        margin: 20px 0;
+        position: relative;
+    }
+
+    a {
+        img {
+            &:hover {
+                opacity: 0.75;
+            }
+        }
+    }
+}
+
+.nextprev {
+    float: right;
+    a {
+        font-size: 1.4em;
+        color: $colour-blue;
+    }
+}
+
+#intro {
+    border-bottom: 1px solid $colour-mgrey;
+    border-top: 1px solid $colour-mgrey;
+    overflow: hidden;
+    padding: 20px 0px;
+    @media screen and (max-width: $break-small) {
+        text-align: center;
+    }
+}
+
+#wrapper {
+    max-width: $resolution;
+    padding: 0 20px;
+}
+
+a.goToTop {
+    border-bottom: 1px solid rgba(0,0,0,0);
+    color: $colour-grey;
+    display: inline-block;
+    margin: 20px 0;
+    position: relative;
+    z-index: 9999;
+    &:hover {
+        border-bottom: 1px solid $colour-blue;
+        text-decoration: none;
+    }
+}
+
+.desc {
+    background: #fff;
+    padding: 20px;
+    h1 {
+        color: $colour-blue;
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    .meta {
+        font-size: 0.9em;
+        list-style-type: none;
+        margin: 50px 0 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            margin-right: 1em;
+        }
+    }
+}
+
+/*------------------------------------------------------------------------------
+ $4 - Footer
+------------------------------------------------------------------------------*/
+
+footer {
+    border-top: 1px solid $colour-mgrey;
+    color: $colour-grey;
+    font-size: 90%;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 10px;
+    span, .footer-right {
+        @media screen and (max-width: $break-medium) {
+            display: block;
+            float: none;
+            text-align: center;
+        }
+    }
+    a {
+        color: $colour-grey;
+        margin: 0 0.25em;
+    }
+}
+
+/*------------------------------------------------------------------------------
+ $M - Miscellaneous
+------------------------------------------------------------------------------*/
+
+#snowden {
+    display: none;
+    @media screen and (max-width: $break-medium) {
+        display: block;
+    }
+}
+
+.footer-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*------------------------------------------------------------------------------
+ $0 - Media Queries
+------------------------------------------------------------------------------*/
+
+/* Retina detection for images */
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {}

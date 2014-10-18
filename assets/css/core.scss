@@ -26,6 +26,7 @@
 
 $background: #ececec;
 
+$colour-black: #000000;
 $colour-grey: tint(black, 15%);
 $colour-mgrey: tint($colour-grey, 90%);
 $colour-lgrey: tint($colour-grey, 60%);
@@ -34,12 +35,12 @@ $colour-aqua: #45c1b9;
 $colour-yellow: #eee54e;
 
 $font-size: modular-scale(10px, 1, 1.618);
-$font-display: serif;
-$font-body: serif;
+$font-display: ServusSlab-ExtraBold;
+$font-body: "adelle-sans", helvetica, sans-serif;
 $paragraph-leading: 1.5em;
 $display-leading: 1.25em;
 
-$resolution: 720px;
+$resolution: 1024px;
 
 $break-tiny: 420px;
 $break-small: 550px;
@@ -61,7 +62,7 @@ p {
     line-height: $paragraph-leading;
     margin-bottom: $paragraph-leading / 2;
     a {
-        border-bottom: 1px solid $colour-blue;
+        border-bottom: 1px solid $colour-black;
         color: $colour-grey;
         padding-bottom: 2px;
         &:hover {
@@ -72,7 +73,7 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-    color: $colour-blue;
+    color: $colour-black;
     font: {
         family: $font-display;
     };
@@ -95,7 +96,7 @@ img {
 ------------------------------------------------------------------------------*/
 
 header {
-    background: $background;
+    font-family: $font-display;
     padding: 5px;
     position: fixed;
     width: 100%;
@@ -103,21 +104,38 @@ header {
 }
 
 .menu {
+    list-style-type: none;
     margin-top: 20px;
     padding: 0;
     > li {
         font-size: 1.3em;
         a {
-            color: $colour-blue;
+            color: $colour-black;
             padding: 0.5em 1em;
         }
-
-        display: inline-block;
     }
 }
 
-.logo {
+#left-nav {
     float: left;
+    font-size: 1.8em;
+    max-width: 900px;
+    padding-top: 20px;
+    width: 100%;
+    a {
+        color: $colour-black;
+    }
+}
+
+#right-nav {
+    float: right;
+    font-size: 1.4rem;
+    max-width: 200px;
+    width: 100%;
+}
+
+.logo {
+    float: right;
     max-width: 60px;
 }
 
@@ -128,8 +146,8 @@ header {
 #main {
     list-style-type: none;
     overflow: hidden;
-    margin: 100px 0 20px;
-    padding: 20px;
+    margin: 450px 0 20px 20px;
+    padding: 0px;
 
     .thumbnail {
         -webkit-backface-visibility: hidden;
@@ -153,7 +171,7 @@ header {
     float: right;
     a {
         font-size: 1.4em;
-        color: $colour-blue;
+        color: $colour-black;
     }
 }
 
@@ -168,7 +186,7 @@ header {
 }
 
 #wrapper {
-    max-width: $resolution;
+    max-width: 960px;
     padding: 0 20px;
 }
 
@@ -180,7 +198,7 @@ a.goToTop {
     position: relative;
     z-index: 9999;
     &:hover {
-        border-bottom: 1px solid $colour-blue;
+        border-bottom: 1px solid $colour-black;
         text-decoration: none;
     }
 }
@@ -189,7 +207,7 @@ a.goToTop {
     background: #fff;
     padding: 20px;
     h1 {
-        color: $colour-blue;
+        color: $colour-black;
         font-size: 3.2rem;
         font-weight: 600;
     }
@@ -213,7 +231,8 @@ a.goToTop {
 footer {
     border-top: 1px solid $colour-mgrey;
     color: $colour-grey;
-    font-size: 90%;
+    font-family: $font-display;
+    font-size: 1.2rem;
     margin: 10px 0;
     overflow: hidden;
     padding: 10px;

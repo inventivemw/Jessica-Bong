@@ -10,16 +10,26 @@
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
   <?php echo css('assets/css/core.css') ?>
+  <?php echo css('assets/css/MyFontsWebfontsKit.css') ?>
+
+  <!-- Web Fonts -->
+  <script src="//use.typekit.net/ocg2tnc.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 
 </head>
 <body>
   <div id="wrapper">
     <header class="header" role="banner">
-      <div class="logo">
-        <a href="<?php echo url() ?>">
-          <img src="<?php echo url('assets/images/eskadom-logo.png') ?>" alt="<?php echo $site->title()->html() ?>" />
-        </a>
+      <div id="left-nav">
+        <a href="/"><strong>Jessica Bong&mdash;</strong></a>
+        <div class="logo">
+          <a href="<?php echo url() ?>">
+            <img src="<?php echo url('assets/images/jessicabong-logo.png') ?>" alt="<?php echo $site->title()->html() ?>" />
+          </a>
+        </div>
       </div>
-      <?php snippet('menu') ?>
+      <div id="right-nav">
+        <?php snippet('menu') ?>
+      </div>
     </header>
     <div class="clearfix"></div>

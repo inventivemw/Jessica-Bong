@@ -1,5 +1,10 @@
 <?php snippet('header') ?>
     <div id="main">
+      <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+        <div class="thumbnail">
+          <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
+        </div>
+      <?php endforeach ?>
       <div class="desc">
       <h1><?php echo $page->title()->html() ?></h1>
         <?php echo $page->text()->kirbytext() ?>
@@ -8,12 +13,6 @@
           <li><b>Scope &ndash;</b> <?php echo $page->tags() ?></li>
         </ul>
       </div>
-
-      <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-        <div class="thumbnail">
-          <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-        </div>
-      <?php endforeach ?>
 
       <nav class="nextprev cf" role="navigation">
         <?php if($prev = $page->prevVisible()): ?>

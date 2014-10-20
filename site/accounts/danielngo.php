@@ -6,7 +6,8 @@ password: >
   $2a$10$O81lauPlAvqwVzJ./CYufO4CeT/NdkGteZJIdjUyZABry.yaCLTe6
 language: en
 role: admin
-token: 463b5a0bf4990da922dc8cf532950e4b998884dc
+token: 220e00d20196443c5e423133d25de5488e89cb82
 history:
+  - projects/vimeo-test
   - about
   - projects

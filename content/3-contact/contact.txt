@@ -2,18 +2,14 @@ Title: Contact
 
 ----
 
-Text:
+Text:     
+    
++61 (0)433 965 250
+<hello@jessicabong.com>
 
-## Get in touch
+    
+    
 
-- (link: http://getkirby.com/support text: Kirby's support page)
-- (link: http://getkirby.com/forum text: Kirby's forum)
-- (link: http://github.com/getkirby text: Kirby on Github)
-- <support@getkirby.com>
-
-## Follow us on Twitter
-
-- Follow Kirby on Twitter (twitter: @getkirby)
-- Follow Bastian on Twitter (twitter: @bastianallgeier)
-- Follow Sascha on Twitter (twitter: @sashtown)
-
+(link: http://instagram.com/jebona text: Instagram)
+(link: http://jessicabong.tumblr.com text: Tumblr)
+(link: http://http://www.theloop.com.au/eskadom text: The Loop)

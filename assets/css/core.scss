@@ -40,12 +40,12 @@ $font-body: "adelle-sans", helvetica, sans-serif;
 $paragraph-leading: 1.5em;
 $display-leading: 1.25em;
 
-$resolution: 1024px;
+$resolution: 1280px;
 
 $break-tiny: 420px;
 $break-small: 550px;
 $break-medium: 768px;
-$break-large: 905px;
+$break-large: 1145px;
 
 body {
     background: $background;
@@ -97,6 +97,7 @@ img {
 
 header {
     font-family: $font-display;
+    max-width: $resolution;
     padding: 5px;
     position: fixed;
     width: 100%;
@@ -125,6 +126,14 @@ header {
     a {
         color: $colour-black;
     }
+
+    @media screen and (max-width: $break-large) {
+        max-width: 75%;
+    }
+
+    @media screen and (max-width: $break-small) {
+        max-width: 90%;
+    }
 }
 
 #right-nav {
@@ -132,10 +141,20 @@ header {
     font-size: 1.4rem;
     max-width: 200px;
     width: 100%;
+
+    @media screen and (max-width: $break-large) {
+        max-width: 20%;
+        float: left;
+    }
+    @media screen and (max-width: $break-small) {
+        max-width: auto;
+        float: none;
+    }
 }
 
 .logo {
     float: right;
+    display: inline-block;
     max-width: 60px;
 }
 

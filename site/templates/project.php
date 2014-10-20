@@ -10,7 +10,7 @@
         <?php echo $page->text()->kirbytext() ?>
         <ul class="meta">
           <li><b>Year &ndash;</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
-          <li><b>Scope &ndash;</b> <?php echo $page->tags() ?></li>
+          <li><b>Scope &ndash;</b> <?php echo $page->tags() ?> </li>
         </ul>
       </div>
 

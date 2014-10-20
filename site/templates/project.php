@@ -1,5 +1,12 @@
 <?php snippet('header') ?>
     <div id="main">
+      <?php if(($page->videourl())){ ?>
+        <div class="video-container">
+          <div class="video-wrapper">
+            <iframe src="<?php echo $page->videourl() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+      <?php } ?>
       <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
         <div class="thumbnail">
           <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">

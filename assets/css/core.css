@@ -56,7 +56,6 @@ img {
 ------------------------------------------------------------------------------*/
 header {
   font-family: ServusSlab-ExtraBold;
-  max-width: 1280px;
   padding: 5px;
   position: fixed;
   width: 100%;
@@ -80,30 +79,15 @@ header {
   width: 100%; }
   #left-nav a {
     color: black; }
-  @media screen and (max-width: 1145px) {
-    #left-nav {
-      max-width: 75%; } }
-  @media screen and (max-width: 550px) {
-    #left-nav {
-      max-width: 90%; } }
 
 #right-nav {
   float: right;
   font-size: 1.4rem;
   max-width: 200px;
   width: 100%; }
-  @media screen and (max-width: 1145px) {
-    #right-nav {
-      max-width: 20%;
-      float: left; } }
-  @media screen and (max-width: 550px) {
-    #right-nav {
-      max-width: auto;
-      float: none; } }
 
 .logo {
   float: right;
-  display: inline-block;
   max-width: 60px; }
 
 /*------------------------------------------------------------------------------
@@ -169,6 +153,21 @@ a.goToTop {
     .desc .meta li {
       display: inline-block;
       margin-right: 1em; }
+
+.video-container {
+  margin: 10px 0;
+  padding-bottom: 20px; }
+  .video-container .video-wrapper {
+    position: relative;
+    padding-bottom: 52.25%;
+    padding-top: 25px;
+    height: 0; }
+    .video-container .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
 
 /*------------------------------------------------------------------------------
  $4 - Footer

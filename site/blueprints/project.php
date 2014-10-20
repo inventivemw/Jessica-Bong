@@ -14,6 +14,9 @@ fields:
   text:
     label: Text
     type:  textarea
+  video:
+    label: Vimeo URL
+    type:  text
   tags:
     label: Tags
     type:  tags

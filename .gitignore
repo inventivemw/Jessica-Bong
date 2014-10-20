@@ -1,0 +1,10 @@
+.DS_Store
+content
+site/accounts
+.htaccess
+*index.php
+*gitpull.php
+*.htaccess
+*.psd
+*.scssc
+*.ai

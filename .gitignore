@@ -1,5 +1,5 @@
 .DS_Store
-content
+content/
 site/accounts
 .htaccess
 *index.php

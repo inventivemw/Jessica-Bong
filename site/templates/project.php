@@ -1,9 +1,9 @@
 <?php snippet('header') ?>
     <div id="main">
-      <?php if(($page->videourl())){ ?>
+      <?php if(($page->video())){ ?>
         <div class="video-container">
           <div class="video-wrapper">
-            <iframe src="<?php echo $page->videourl() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="<?php echo $page->video() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
       <?php } ?>

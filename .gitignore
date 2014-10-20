@@ -1,0 +1,10 @@
+.DS_Store
+panel/
+site/accounts
+content
+docs
+*index.php
+*.htaccess
+*.psd
+*.scssc
+*.ai

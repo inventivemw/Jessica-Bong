@@ -112,7 +112,11 @@ header {
         font-size: 1.3em;
         a {
             color: $colour-black;
-            padding: 0.5em 1em;
+            padding: 0.5em 1em 1em;
+            text-decoration: none;
+            &:hover {
+                border-bottom: 2px solid #000;
+            }
         }
     }
 }

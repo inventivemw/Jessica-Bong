@@ -69,8 +69,14 @@ header {
   .menu > li {
     font-size: 1.3em; }
     .menu > li a {
+      border-bottom: 2px solid transparent;
       color: black;
-      padding: 0.5em 1em 1em; }
+      display: inline-block;
+      margin-bottom: 0.15em;
+      padding: 0.15em;
+      text-decoration: none; }
+      .menu > li a:hover {
+        border-bottom: 2px solid #000; }
 
 #left-nav {
   float: left;

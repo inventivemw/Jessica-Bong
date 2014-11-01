@@ -111,9 +111,15 @@ header {
     > li {
         font-size: 1.3em;
         a {
+            border-bottom: 2px solid rgba(0,0,0,0);
             color: $colour-black;
-            padding: 0.5em 1em 1em;
-            
+            display: inline-block;
+            margin-bottom: 0.15em;
+            padding: 0.15em;
+            text-decoration: none;
+            &:hover {
+                border-bottom: 2px solid #000;
+            }
         }
     }
 }

@@ -21,7 +21,7 @@
 body {
   background: #ececec;
   color: #262626;
-  font-family: "adelle-sans", helvetica, sans-serif;
+  font-family: "servus-slab", helvetica, sans-serif;
   font-size: 14.562px;
   font-weight: 300; }
 
@@ -159,11 +159,15 @@ a.goToTop {
     text-decoration: none; }
 
 .desc {
-  max-width: 680px;
+  max-width: 500px;
   padding: 20px; }
   .desc h1 {
+    border-bottom: 1px solid black;
+    font-family: "servus-slab", helvetica, sans-serif;
     color: black;
-    font-size: 2.6rem;
+    display: inline-block;
+    margin-bottom: 2em;
+    font-size: 1.8rem;
     font-weight: 600; }
   .desc .meta {
     font-size: 0.9em;
@@ -198,11 +202,11 @@ footer {
  $M - Miscellaneous
 ------------------------------------------------------------------------------*/
 .nextprev {
-  max-width: 990px;
+  max-width: 1180px;
   position: fixed;
   z-index: 3;
   width: 100%;
-  bottom: 50%;
+  bottom: 5%;
   left: -15px; }
   @media screen and (max-width: 768px) {
     .nextprev {
@@ -211,7 +215,7 @@ footer {
     background-image: url("../images/next.gif");
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: 50%;
+    background-size: 20%;
     float: right;
     height: 100px;
     width: 100px; }
@@ -219,7 +223,7 @@ footer {
     background-image: url("../images/prev.gif");
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: 50%;
+    background-size: 20%;
     float: left;
     height: 100px;
     width: 100px; }

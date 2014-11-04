@@ -22,7 +22,7 @@ body {
   background: #ececec;
   color: #262626;
   font-family: "adelle-sans", helvetica, sans-serif;
-  font-size: 16.18px;
+  font-size: 14.562px;
   font-weight: 300; }
 
 p {
@@ -69,29 +69,33 @@ header {
   .menu > li {
     font-size: 1.3em; }
     .menu > li a {
-      border-bottom: 2px solid transparent;
+      border-bottom: 3px solid transparent;
       color: black;
       display: inline-block;
-      margin-bottom: 0.15em;
-      padding: 0.15em;
+      height: 1.5em;
+      margin-bottom: 0.5em;
       text-decoration: none; }
       .menu > li a:hover {
-        border-bottom: 2px solid #000; }
+        border-bottom: 3px solid #000; }
 
 #left-nav {
   float: left;
   font-size: 1.8em;
-  max-width: 900px;
+  margin-bottom: 0.75em;
+  max-width: 940px;
+  padding-right: 40px;
   padding-top: 20px;
   width: 100%; }
   #left-nav a {
-    color: black; }
-  @media screen and (max-width: 1145px) {
-    #left-nav {
-      max-width: 75%; } }
-  @media screen and (max-width: 550px) {
-    #left-nav {
-      max-width: 90%; } }
+    border-bottom: 3px solid transparent;
+    color: black;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    height: 1.5em;
+    text-decoration: none; }
+    #left-nav a:hover {
+      border-bottom: 3px solid #000; }
 
 #right-nav {
   float: right;
@@ -100,10 +104,6 @@ header {
   width: 100%; }
   @media screen and (max-width: 1145px) {
     #right-nav {
-      max-width: 20%;
-      float: left; } }
-  @media screen and (max-width: 550px) {
-    #right-nav {
       max-width: auto;
       float: none; } }
 
@@ -111,15 +111,19 @@ header {
   float: right;
   display: inline-block;
   max-width: 60px; }
+  .logo a:hover {
+    border: none !important; }
 
 /*------------------------------------------------------------------------------
  $3 - Structure
 ------------------------------------------------------------------------------*/
 #main {
   list-style-type: none;
-  overflow: hidden;
   margin: 150px 0 20px 20px;
-  padding: 0px; }
+  padding-right: 20px; }
+  @media screen and (max-width: 768px) {
+    #main {
+      padding: 0; } }
   #main .thumbnail {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -129,12 +133,6 @@ header {
     position: relative; }
   #main a img:hover {
     opacity: 0.75; }
-
-.nextprev {
-  float: right; }
-  .nextprev a {
-    font-size: 1.4em;
-    color: black; }
 
 #intro {
   border-bottom: 1px solid #e9e9e9;
@@ -161,11 +159,11 @@ a.goToTop {
     text-decoration: none; }
 
 .desc {
-  background: #fff;
+  max-width: 680px;
   padding: 20px; }
   .desc h1 {
     color: black;
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     font-weight: 600; }
   .desc .meta {
     font-size: 0.9em;
@@ -199,6 +197,33 @@ footer {
 /*------------------------------------------------------------------------------
  $M - Miscellaneous
 ------------------------------------------------------------------------------*/
+.nextprev {
+  max-width: 990px;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  bottom: 50%;
+  left: -15px; }
+  @media screen and (max-width: 768px) {
+    .nextprev {
+      padding: 0; } }
+  .nextprev .next {
+    background-image: url("../images/next.gif");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50%;
+    float: right;
+    height: 100px;
+    width: 100px; }
+  .nextprev .prev {
+    background-image: url("../images/prev.gif");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50%;
+    float: left;
+    height: 100px;
+    width: 100px; }
+
 #snowden {
   display: none; }
   @media screen and (max-width: 768px) {

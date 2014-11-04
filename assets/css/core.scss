@@ -15,10 +15,15 @@
 */
 
 @import url("bootstrap.min.css");
-
 @import url("bootstrap-responsive.min.css");
-
 @import "bourbon/bourbon";
+
+@mixin border-radius($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
 
 /*------------------------------------------------------------------------------
  $1 - Typography & Colour
@@ -34,7 +39,7 @@ $colour-blue: #0600ff;
 $colour-aqua: #45c1b9;
 $colour-yellow: #eee54e;
 
-$font-size: modular-scale(10px, 1, 1.618);
+$font-size: modular-scale(9px, 1, 1.618);
 $font-display: ServusSlab-ExtraBold;
 $font-body: "adelle-sans", helvetica, sans-serif;
 $paragraph-leading: 1.5em;
@@ -111,14 +116,14 @@ header {
     > li {
         font-size: 1.3em;
         a {
-            border-bottom: 2px solid rgba(0,0,0,0);
+            border-bottom: 3px solid rgba(0,0,0,0);
             color: $colour-black;
             display: inline-block;
-            margin-bottom: 0.15em;
-            padding: 0.15em;
+            height: 1.5em;
+            margin-bottom: 0.5em;
             text-decoration: none;
             &:hover {
-                border-bottom: 2px solid #000;
+                border-bottom: 3px solid #000;
             }
         }
     }
@@ -127,19 +132,22 @@ header {
 #left-nav {
     float: left;
     font-size: 1.8em;
-    max-width: 900px;
+    margin-bottom: 0.75em;
+    max-width: 940px;
+    padding-right: 40px;
     padding-top: 20px;
     width: 100%;
     a {
+        border-bottom: 3px solid rgba(0,0,0,0);
         color: $colour-black;
-    }
-
-    @media screen and (max-width: $break-large) {
-        max-width: 75%;
-    }
-
-    @media screen and (max-width: $break-small) {
-        max-width: 90%;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        height: 1.5em;
+        text-decoration: none;
+        &:hover {
+            border-bottom: 3px solid #000;
+        }
     }
 }
 
@@ -148,12 +156,7 @@ header {
     font-size: 1.4rem;
     max-width: 200px;
     width: 100%;
-
     @media screen and (max-width: $break-large) {
-        max-width: 20%;
-        float: left;
-    }
-    @media screen and (max-width: $break-small) {
         max-width: auto;
         float: none;
     }
@@ -163,6 +166,11 @@ header {
     float: right;
     display: inline-block;
     max-width: 60px;
+    a {
+        &:hover {
+            border: none !important;
+        }
+    }
 }
 
 /*------------------------------------------------------------------------------
@@ -171,10 +179,11 @@ header {
 
 #main {
     list-style-type: none;
-    overflow: hidden;
     margin: 150px 0 20px 20px;
-    padding: 0px;
-
+    padding-right: 20px;
+    @media screen and (max-width: $break-medium) {
+        padding: 0;
+    }
     .thumbnail {
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
@@ -190,14 +199,6 @@ header {
                 opacity: 0.75;
             }
         }
-    }
-}
-
-.nextprev {
-    float: right;
-    a {
-        font-size: 1.4em;
-        color: $colour-black;
     }
 }
 
@@ -230,11 +231,11 @@ a.goToTop {
 }
 
 .desc {
-    background: #fff;
+    max-width: 680px;
     padding: 20px;
     h1 {
         color: $colour-black;
-        font-size: 3.2rem;
+        font-size: 2.6rem;
         font-weight: 600;
     }
 
@@ -278,6 +279,42 @@ footer {
 /*------------------------------------------------------------------------------
  $M - Miscellaneous
 ------------------------------------------------------------------------------*/
+.nextprev {
+    max-width: 990px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    bottom: 50%;
+    left: -15px;
+
+    @media screen and (max-width: $break-medium) {
+        padding: 0;
+    }
+
+    .next {
+        background: {
+            image: url('../images/next.gif');
+            repeat: no-repeat;
+            position: 50%;
+            size: 50%;
+        }
+        float: right;
+        height: 100px;
+        width: 100px;
+    }
+
+    .prev {
+        background: {
+            image: url('../images/prev.gif');
+            repeat: no-repeat;
+            position: 50%;
+            size: 50%;
+        }
+        float: left;
+        height: 100px;
+        width: 100px;
+    }
+}
 
 #snowden {
     display: none;

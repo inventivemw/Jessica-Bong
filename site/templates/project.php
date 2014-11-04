@@ -1,9 +1,5 @@
 <?php snippet('header') ?>
     <div id="main">
-      <div class="desc">
-        <h1><?php echo $page->title()->html() ?></h1>
-          <?php echo $page->text()->kirbytext() ?>    
-      </div>
       <?php if(($page->video() != "")){ ?>
         <div class="video-container">
           <div class="video-wrapper">
@@ -17,6 +13,8 @@
         </div>
       <?php endforeach ?>
       <div class="desc">
+        <h1><?php echo $page->title()->html() ?></h1>
+          <?php echo $page->text()->kirbytext() ?> 
         <ul class="meta">
           <li><b>Year &ndash;</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
           <li><b>Scope &ndash;</b> <?php echo $page->tags() ?></li>

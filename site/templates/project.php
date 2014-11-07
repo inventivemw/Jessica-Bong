@@ -17,11 +17,13 @@
           <?php echo $page->text()->kirbytext() ?> 
         <ul class="meta">
           <li>Year &ndash; <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
+          <?php if(($page->tags() != "")){ ?>
           <li>Tags &ndash; 
             <?php foreach($page->tags()->split(',') as $tag): ?>
               <?php echo $tag.', ' ?>
             <?php endforeach ?>
           </li>
+          <?php } ?>
         </ul>
       </div>
   

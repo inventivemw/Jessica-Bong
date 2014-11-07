@@ -233,6 +233,10 @@ a.goToTop {
 .desc {
     max-width: 500px;
     padding: 20px;
+    @media screen and (max-width: $break-small) {
+        padding: 20px 0 20px;
+    }
+
     h1 {
         border-bottom: 1px solid $colour-black;
         font-family: $font-body;
@@ -248,10 +252,6 @@ a.goToTop {
         list-style-type: none;
         margin: 50px 0 0;
         padding: 0;
-        li {
-            display: inline-block;
-            margin-right: 1em;
-        }
     }
 }
 

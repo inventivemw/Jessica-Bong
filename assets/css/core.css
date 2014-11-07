@@ -161,6 +161,9 @@ a.goToTop {
 .desc {
   max-width: 500px;
   padding: 20px; }
+  @media screen and (max-width: 550px) {
+    .desc {
+      padding: 20px 0 20px; } }
   .desc h1 {
     border-bottom: 1px solid black;
     font-family: "servus-slab", helvetica, sans-serif;
@@ -174,9 +177,6 @@ a.goToTop {
     list-style-type: none;
     margin: 50px 0 0;
     padding: 0; }
-    .desc .meta li {
-      display: inline-block;
-      margin-right: 1em; }
 
 /*------------------------------------------------------------------------------
  $4 - Footer

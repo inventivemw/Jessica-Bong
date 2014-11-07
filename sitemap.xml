@@ -8,54 +8,70 @@
 
 <url>
   <loc>http://jessicabong.com/</loc>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://jessicabong.com/about</loc>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://jessicabong.com/contact</loc>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://jessicabong.com/projects/soft-power</loc>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/cancer-stationery-poster</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://jessicabong.com/projects/muma-exhibition-guide</loc>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://jessicabong.com/projects/monash-clubs-guide-20</loc>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://jessicabong.com/projects/butter-magazi</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://jessicabong.com/projects/call</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://jessicabong.com/projects/digitiaillustration</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://jessicabong.com/projects/esperanto</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://jessicabong.com/projects/ephemera-2</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://jessicabong.com/projects/waffles-co</loc>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://jessicabong.com/projects/half</loc>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/call</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/esperanto</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/digitiaillustration</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/ephemera-2</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/esperanto-the-sex-issue</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/waffles-co</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/esperanto-exploration-i</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/carry-on</loc>
+  <changefreq>weekly</changefreq>
 </url>
 </urlset>

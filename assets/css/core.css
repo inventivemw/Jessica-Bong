@@ -82,7 +82,7 @@ header {
   float: left;
   font-size: 1.8em;
   margin-bottom: 0.75em;
-  max-width: 940px;
+  max-width: 960px;
   padding-right: 40px;
   padding-top: 20px;
   width: 100%; }
@@ -92,7 +92,7 @@ header {
     display: inline-block;
     padding: 0;
     margin: 0;
-    height: 1.5em;
+    height: 1.35em;
     text-decoration: none; }
     #left-nav a:hover {
       border-bottom: 3px solid #000; }
@@ -102,7 +102,7 @@ header {
   font-size: 1.4rem;
   max-width: 200px;
   width: 100%; }
-  @media screen and (max-width: 1145px) {
+  @media screen and (max-width: 1200px) {
     #right-nav {
       max-width: auto;
       float: none; } }
@@ -206,7 +206,7 @@ footer {
   position: fixed;
   z-index: 3;
   width: 100%;
-  bottom: 5%;
+  bottom: 10%;
   left: -15px; }
   @media screen and (max-width: 768px) {
     .nextprev {
@@ -217,7 +217,7 @@ footer {
     background-position: 50%;
     background-size: 20%;
     float: right;
-    height: 100px;
+    height: 20px;
     width: 100px; }
   .nextprev .prev {
     background-image: url("../images/prev.gif");
@@ -225,7 +225,7 @@ footer {
     background-position: 50%;
     background-size: 20%;
     float: left;
-    height: 100px;
+    height: 20px;
     width: 100px; }
 
 #snowden {

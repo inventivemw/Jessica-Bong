@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-    <div id="main">
+
       <?php if(($page->video() != "")){ ?>
         <div class="video-container">
           <div class="video-wrapper">
@@ -16,10 +16,15 @@
         <h1><?php echo $page->title()->html() ?></h1>
           <?php echo $page->text()->kirbytext() ?> 
         <ul class="meta">
-          <li><b>Year &ndash;</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
-          <li><b>Scope &ndash;</b> <?php echo $page->tags() ?></li>
+          <li>Year &ndash; <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
+          <li>Tags &ndash; 
+            <?php foreach($page->tags()->split(',') as $tag): ?>
+              <?php echo $tag.',' ?>
+            <?php endforeach ?>
+          </li>
         </ul>
       </div>
+  
 
       <nav class="nextprev cf" role="navigation">
         <?php if($prev = $page->prevVisible()): ?>
@@ -29,6 +34,5 @@
           <a class="next" href="<?php echo $next->url() ?>"></a>
         <?php endif ?>
       </nav>
-    </div>
 
 <?php snippet('footer') ?>

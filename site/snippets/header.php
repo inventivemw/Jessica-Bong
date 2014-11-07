@@ -45,3 +45,4 @@
       </div>
     </header>
     <div class="clearfix"></div>
+      <div id="main">

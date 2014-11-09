@@ -1,3 +1,7 @@
+$(document).ready(function(){
+  $(".video-wrapper").fitVids();
+});
+
 /* Smooth scrolling */
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -26,5 +30,7 @@ $(window).on('scroll', function() {
 });
 
 $(function() {
-    $("img.lazy").lazyload();
+    $("img.lazy").lazyload({
+      threshold : 200
+  });
 });

@@ -1,6 +1,6 @@
 .DS_Store
 content/*
-site/accounts
+site/accounts/*
 .htaccess
 *index.php
 *gitpull.php
@@ -8,3 +8,5 @@ site/accounts
 *.psd
 *.scssc
 *.ai
+site/accounts/*
+content/2-projects/*

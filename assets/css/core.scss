@@ -184,6 +184,11 @@ header {
     @media screen and (max-width: $break-medium) {
         padding: 0;
     }
+    
+    .video-wrapper {
+        padding: 5px;
+    }
+
     .thumbnail {
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
@@ -191,6 +196,11 @@ header {
         border: none;
         margin: 2px 0;
         position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     a {

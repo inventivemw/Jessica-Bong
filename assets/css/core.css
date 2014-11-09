@@ -124,6 +124,8 @@ header {
   @media screen and (max-width: 768px) {
     #main {
       padding: 0; } }
+  #main .video-wrapper {
+    padding: 5px; }
   #main .thumbnail {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -131,6 +133,9 @@ header {
     border: none;
     margin: 2px 0;
     position: relative; }
+    #main .thumbnail img {
+      width: 100%;
+      height: auto; }
   #main a img:hover {
     opacity: 0.75; }
 

@@ -1,15 +1,13 @@
 <?php snippet('header') ?>
 
-      <?php if(($page->video() != "")){ ?>
-        <div class="video-container">
-          <div class="video-wrapper">
-            <iframe src="<?php echo $page->video() ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div>
-      <?php } ?>
+    <?php if(($page->vimeo() != "")){?>
+      <div class="video-wrapper">
+        <iframe src="//player.vimeo.com/video/<?php echo $page->vimeo() ?>?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen width="425" height="240" ></iframe>
+      </div>
+    <?php } ?>
       <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
         <div class="thumbnail">
-          <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
+          <img class="lazy" data-original="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
         </div>
       <?php endforeach ?>
       <div class="desc">
@@ -26,7 +24,6 @@
           <?php } ?>
         </ul>
       </div>
-  
 
       <nav class="nextprev cf" role="navigation">
         <?php if($prev = $page->prevVisible()): ?>

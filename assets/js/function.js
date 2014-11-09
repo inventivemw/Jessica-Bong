@@ -31,6 +31,7 @@ $(window).on('scroll', function() {
 
 $(function() {
     $("img.lazy").lazyload({
-      threshold : 200
+      threshold : 200,
+      effect: "fadeIn"
   });
 });

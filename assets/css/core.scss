@@ -69,10 +69,11 @@ p {
     a {
         border-bottom: 1px solid $colour-black;
         color: $colour-grey;
-        padding-bottom: 2px;
+        padding-bottom: 0.025em;
         &:hover {
-            color: $colour-blue;
+            color: $colour-black;
             text-decoration: none;
+            border-bottom: 2px solid $colour-black;
         }
     }
 }
@@ -107,6 +108,10 @@ header {
     position: fixed;
     width: 100%;
     z-index: 3;
+
+    @media screen and (max-width: $break-small) {
+        position: static;
+    }
 }
 
 .menu {
@@ -137,6 +142,12 @@ header {
     padding-right: 40px;
     padding-top: 20px;
     width: 100%;
+
+    @media screen and (max-width: $break-small) {
+        padding: 20px 0;
+        margin: 0;
+    }
+
     a {
         border-bottom: 3px solid rgba(0,0,0,0);
         color: $colour-black;
@@ -181,8 +192,9 @@ header {
     list-style-type: none;
     margin: 150px 0 20px 20px;
     padding-right: 20px;
-    @media screen and (max-width: $break-medium) {
+    @media screen and (max-width: $break-small) {
         padding: 0;
+        margin: 0;
     }
     
     .video-wrapper {
@@ -242,9 +254,9 @@ a.goToTop {
 
 .desc {
     max-width: 500px;
-    padding: 20px;
+    padding: 20px 5px;
     @media screen and (max-width: $break-small) {
-        padding: 20px 0 20px;
+        padding: 20px 0;
     }
 
     h1 {
@@ -276,7 +288,7 @@ footer {
     font-size: 1.2rem;
     margin: 10px 0;
     overflow: hidden;
-    padding: 10px;
+    padding: 10px 5px;
     span, .footer-right {
         @media screen and (max-width: $break-medium) {
             display: block;
@@ -302,7 +314,9 @@ footer {
     left: -15px;
 
     @media screen and (max-width: $break-medium) {
+        width: 120%;
         padding: 0;
+        left: -32px;
     }
 
     .next {

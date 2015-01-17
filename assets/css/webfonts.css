@@ -20,4 +20,18 @@
 	font-family: 'servus-slab';
 	src: url('../fonts/servus-slab.otf');
 }
- 
+
+@font-face {
+	font-family: 'servus-slab-bold';
+	src: url('../fonts/servus-slab-bold.otf');
+}
+
+@font-face {
+	font-family: 'servus-slab-semibold';
+	src: url('../fonts/servus-slab-semibold.otf');
+}
+
+@font-face {
+	font-family: 'servus-slab-regular-italic';
+	src: url('../fonts/servus-slab-regular-italic.otf');
+}

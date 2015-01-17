@@ -31,7 +31,14 @@
 <body>
   <div id="wrapper">
     <header class="header" role="banner">
-      <div id="left-nav">
+      <div id="left-nav"
+        <?php
+            $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+           if (false !== strpos($url, 'blog')){
+            echo 'style="position:absolute;"';
+           }
+        ?>
+      >
         <a href="/"><strong>Jessica Bong&mdash;</strong></a>
         <div class="logo">
           <a href="<?php echo url() ?>">

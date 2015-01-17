@@ -37,6 +37,18 @@ p {
       color: black;
       text-decoration: none;
       border-bottom: 2px solid black; }
+  p strong {
+    font-family: "servus-slab-semibold"; }
+  p em {
+    font-family: "servus-slab-regular-italic"; }
+
+.lead {
+  font-size: 2em;
+  line-height: 1.35em;
+  margin-left: 1.65em; }
+  @media screen and (max-width: 550px) {
+    .lead {
+      margin-left: 0; } }
 
 h1, h2, h3, h4, h5 {
   color: black;
@@ -46,11 +58,23 @@ h1, h2, h3, h4, h5 {
   padding: 0.25em 0; }
 
 h2 {
-  font-weight: 600;
   margin: 10px 0; }
 
 img {
   width: 100%; }
+
+a {
+  color: black; }
+  a:hover {
+    color: black; }
+
+blockquote {
+  font-size: 2em; }
+  blockquote p {
+    text-indent: -0.35em;
+    hanging-punctuation: first;
+    line-height: 1.25em;
+    margin-left: 0.65em !important; }
 
 /*------------------------------------------------------------------------------
  $2 - Header and Navigation
@@ -59,12 +83,7 @@ header {
   font-family: ServusSlab-ExtraBold;
   max-width: 1280px;
   padding: 5px;
-  position: fixed;
-  width: 100%;
-  z-index: 3; }
-  @media screen and (max-width: 550px) {
-    header {
-      position: static; } }
+  width: 100%; }
 
 .menu {
   list-style-type: none;
@@ -83,21 +102,23 @@ header {
         border-bottom: 3px solid #000; }
 
 #left-nav {
-  float: left;
   font-size: 1.8em;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.35em;
   max-width: 960px;
   padding-right: 40px;
   padding-top: 20px;
-  width: 100%; }
+  position: fixed;
+  width: 100%;
+  z-index: 3; }
   @media screen and (max-width: 550px) {
     #left-nav {
       padding: 20px 0;
-      margin: 0; } }
+      position: static; } }
   #left-nav a {
     border-bottom: 3px solid transparent;
     color: black;
     display: inline-block;
+    float: left;
     padding: 0;
     margin: 0;
     height: 1.35em;
@@ -106,14 +127,19 @@ header {
       border-bottom: 3px solid #000; }
 
 #right-nav {
-  float: right;
   font-size: 1.4rem;
   max-width: 200px;
-  width: 100%; }
-  @media screen and (max-width: 1200px) {
+  position: fixed;
+  left: 1015px;
+  width: 100%;
+  z-index: 3; }
+  @media screen and (max-width: 1115px) {
     #right-nav {
-      max-width: auto;
-      float: none; } }
+      left: 25px;
+      top: 55px; } }
+  @media screen and (max-width: 550px) {
+    #right-nav {
+      position: static; } }
 
 .logo {
   float: right;
@@ -191,6 +217,50 @@ a.goToTop {
     list-style-type: none;
     margin: 50px 0 0;
     padding: 0; }
+
+article .title {
+  margin-bottom: 9em; }
+article h1 {
+  margin-left: -0.5em; }
+  @media screen and (max-width: 550px) {
+    article h1 {
+      margin: 0 0 1em 0; } }
+article p {
+  font-size: 1.35em;
+  margin: 1.5em 2.5em; }
+  @media screen and (max-width: 550px) {
+    article p {
+      margin-left: 0; } }
+article ul.tags {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 3.5em; }
+  @media screen and (max-width: 550px) {
+    article ul.tags {
+      margin-left: 0; } }
+article hr {
+  text-align: left;
+  border-top: 2px solid black;
+  margin: 3em 3.5em;
+  max-width: 20px; }
+  @media screen and (max-width: 550px) {
+    article hr {
+      margin-left: 0; } }
+article img {
+  margin: 1em 0 0 -0.35em; }
+article figure.image {
+  margin: 3em 0; }
+article figcaption {
+  font-size: 1em;
+  margin: 1em 3.5em; }
+article blockquote {
+  margin: 3em 0; }
+
+#discussion {
+  margin: 5em 0 0 3.5em; }
+  @media screen and (max-width: 550px) {
+    #discussion {
+      margin-left: 0; } }
 
 /*------------------------------------------------------------------------------
  $4 - Footer

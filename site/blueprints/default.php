@@ -10,3 +10,6 @@ fields:
   text:
     label: Text
     type:  textarea
+  tags:
+    label: Keywords
+    type:  tags

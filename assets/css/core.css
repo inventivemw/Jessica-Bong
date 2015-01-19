@@ -98,12 +98,9 @@ header {
   list-style-type: none;
   margin-top: 20px;
   padding: 0; }
-  @media screen and (max-width: 550px) {
-    .menu {
-      margin-top: 5em; } }
   .menu > li {
     font-size: 1.3em; }
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 1135px) {
       .menu > li {
         float: left;
         margin-right: 1em; } }
@@ -128,9 +125,9 @@ header {
   z-index: 3; }
   @media screen and (max-width: 550px) {
     #left-nav {
-      max-width: 270px;
+      max-width: 335px;
       padding: 20px 0;
-      position: static; } }
+      position: absolute; } }
   #left-nav a {
     border-bottom: 3px solid transparent;
     color: black;
@@ -150,13 +147,11 @@ header {
   left: 1015px;
   width: 100%;
   z-index: 3; }
-  @media screen and (max-width: 1115px) {
+  @media screen and (max-width: 1135px) {
     #right-nav {
+      position: absolute;
       left: 25px;
       top: 55px; } }
-  @media screen and (max-width: 550px) {
-    #right-nav {
-      position: static; } }
 
 .logo {
   float: right;
@@ -175,7 +170,7 @@ header {
   @media screen and (max-width: 550px) {
     #main {
       padding: 0;
-      margin: 0; } }
+      margin: 150px 0 20px; } }
   #main .video-wrapper {
     padding: 5px; }
   #main .thumbnail {
@@ -236,12 +231,13 @@ a.goToTop {
     padding: 0; }
 
 article .title {
-  margin-bottom: 9em; }
+  margin-bottom: 3em; }
 article h1 {
+  font-size: 3em;
   margin-left: -0.5em; }
   @media screen and (max-width: 550px) {
     article h1 {
-      margin: 0 0 1em 0; } }
+      margin: 2em 0 1em 0; } }
 article p {
   font-size: 1.35em;
   margin: 1.5em 0 1.5em 2.5em; }

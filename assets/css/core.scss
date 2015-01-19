@@ -50,7 +50,7 @@ $resolution: 1280px;
 $break-tiny: 420px;
 $break-small: 550px;
 $break-medium: 768px;
-$break-large: 1200px;
+$break-large: 1135px;
 
 body {
     background: $background;
@@ -155,12 +155,9 @@ header {
     list-style-type: none;
     margin-top: 20px;
     padding: 0;
-    @media screen and (max-width: $break-small) {
-        margin-top: 5em;
-    }
     > li {
         font-size: 1.3em;
-        @media screen and (max-width: $break-small) {
+        @media screen and (max-width: $break-large) {
             float: left;
             margin-right: 1em;
         }
@@ -189,9 +186,9 @@ header {
     z-index: 3;
 
     @media screen and (max-width: $break-small) {
-        max-width: 270px;
+        max-width: 335px;
         padding: 20px 0;
-        position: static;
+        position: absolute;
     }
 
     a {
@@ -216,13 +213,10 @@ header {
     left: 1015px;
     width: 100%;
     z-index: 3;
-    @media screen and (max-width: 1115px) {
+    @media screen and (max-width: $break-large) {
+        position: absolute;
         left: 25px;
         top: 55px;
-    }
-
-    @media screen and (max-width: $break-small) {
-        position: static;
     }
 }
 
@@ -247,7 +241,7 @@ header {
     padding-right: 20px;
     @media screen and (max-width: $break-small) {
         padding: 0;
-        margin: 0;
+        margin: 150px 0 20px;
     }
     
     .video-wrapper {
@@ -332,13 +326,14 @@ a.goToTop {
 
 article {
     .title {
-        margin-bottom: 9em;
+        margin-bottom: 3em;
     }
 
     h1 {
+        font-size: 3em;
         margin-left: -0.5em;
         @media screen and (max-width: $break-small) {
-            margin: 0 0 1em 0;
+            margin: 2em 0 1em 0;
         }
     }
 

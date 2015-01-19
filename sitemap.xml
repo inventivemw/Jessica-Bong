@@ -4,7 +4,6 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
   <loc>http://jessicabong.com/</loc>
@@ -19,43 +18,39 @@
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://jessicabong.com/projects/soft-power</loc>
+  <loc>http://jessicabong.com/blog</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://jessicabong.com/projects/cancer-stationery-poster</loc>
+  <loc>http://jessicabong.com/projects/sublime-illustration</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://jessicabong.com/projects/muma-exhibition-guide</loc>
+  <loc>http://jessicabong.com/projects/mexican-film-festival</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://jessicabong.com/projects/monash-clubs-guide-20</loc>
+  <loc>http://jessicabong.com/projects/istd-linings-publication</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://jessicabong.com/projects/butter-magazi</loc>
+  <loc>http://jessicabong.com/projects/half-the-sky-publication</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://jessicabong.com/projects/half</loc>
+  <loc>http://jessicabong.com/projects/zumbo-pattisier</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://jessicabong.com/projects/call</loc>
+  <loc>http://jessicabong.com/projects/soft-power-digital-publication</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://jessicabong.com/projects/esperanto</loc>
+  <loc>http://jessicabong.com/projects/digital-illustration-poster</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://jessicabong.com/projects/digitiaillustration</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://jessicabong.com/projects/ephemera-2</loc>
+  <loc>http://jessicabong.com/projects/cancer-almanac-infographic</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
@@ -63,15 +58,43 @@
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://jessicabong.com/projects/waffles-co</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
   <loc>http://jessicabong.com/projects/esperanto-exploration-i</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://jessicabong.com/projects/carry-on</loc>
+  <loc>http://jessicabong.com/projects/esperanto</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/esperantomagazine-melbourne-issue</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/call-n-clean-identity-design-typography</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/muma-exhibition-guide</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/butter-magazi</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/ephemera-2</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/waffles-co</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/monash-clubs-guide-poster</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://jessicabong.com/projects/carry-on-poster</loc>
   <changefreq>weekly</changefreq>
 </url>
 </urlset>
